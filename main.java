@@ -7,8 +7,11 @@ class Main {
 			Console console = System.console();
 			String input = console.readLine("Enter anything: ");
 
-			if (!input.equals("This is the way")) {
-    		System.out.println("I don't know: " + input);				
+			if (input.equals("exit")) {
+			    break;
+			} else if (!input.equals("This is the way")) {
+    		System.out.println("I don't know: " + input);
+    		System.out.println("That is not the way");
 			} else {
 				System.out.println("This is the way");
 			}
